@@ -20,7 +20,7 @@
   },
   "peerDependencies": {
     "grunt": "*",
-    "grunt-aws-lambda": "*",
+    "grunt-aws-lambda": "git://github.com/timdp/grunt-aws-lambda.git#npm3-native",
     "grunt-contrib-nodeunit": "*"
   },
   "devDependencies": {
