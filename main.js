@@ -10,7 +10,7 @@ module.exports = {
 		NonFatalError: NonFatalError
 	},
 	Succeed: function (result, context, callback) {
-		context.succed(result);
+		context.succeed(result);
 	},
 	Fail: function (error, code, context, callback) {
 		context.fail(new LambdaError(error.toString(), code));
