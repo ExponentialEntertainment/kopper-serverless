@@ -4,6 +4,9 @@ module.exports = function (grunt) {
 			options: {
 				indentation: '\t'
 			}
+		},
+		nodeunit: {
+			all: ['test/**']
 		}
 	});
 	
