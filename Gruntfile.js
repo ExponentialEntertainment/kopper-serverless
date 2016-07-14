@@ -8,17 +8,17 @@ module.exports = function (grunt) {
 		nodeunit: {
 			all: ['test/**'],
 			'all-lcov': {
-				src: ['test/**'],
+				src: ['test/**/*.js'],
 				options: {
 					reporter: 'lcov',
-					reporterOutput: 'coverage-results.txt'
+					reporterOutput: './test/coverage-results.log'
 				}
 			}
 		},
 		coveralls: {
 			upload: {
-				src: 'coverage-results.txt',
-			},
+				src: './test/coverage-results.log'
+			}
 		}
 	});
 
