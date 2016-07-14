@@ -1,7 +1,7 @@
 {
   "name": "kopper-serverless",
   "description": "A small framework for building serverless apis on AWS lambda in node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "keywords": [
     "aws",
     "lambda",
@@ -26,12 +26,12 @@
     "grunt": "*",
     "grunt-release": "*",
     "grunt-contrib-nodeunit": "*",
-		"jscoverage": "*",
-		"grunt-coveralls": "*"
+    "jscoverage": "*",
+    "grunt-coveralls": "*"
   },
   "scripts": {
     "test": "grunt nodeunit",
-		"coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 grunt nodeunit:all-lcov && grunt coveralls:upload"
+    "coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 grunt nodeunit:all-lcov && grunt coveralls:upload"
   },
   "main": "main.js"
 }
