@@ -6,16 +6,23 @@ module.exports = function (grunt) {
 			}
 		},
 		nodeunit: {
-			all: ['test/**']
-		},
-		'nodeunit-lcov': {
 			all: ['test/**'],
-			options: {
-				reporter: 'lcov'
+			'all-lcov': {
+				src: ['test/**'],
+				options: {
+					reporter: 'lcov',
+					reporterOutput: 'coverage-results.txt'
+				}
 			}
+		},
+		coveralls: {
+			upload: {
+				src: 'coverage-results.txt',
+			},
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-nodeunit');
+	grunt.loadNpmTasks('grunt-coveralls');
 	grunt.loadNpmTasks('grunt-release');
 };
