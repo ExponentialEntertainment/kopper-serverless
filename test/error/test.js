@@ -1,5 +1,5 @@
-var LambdaError = require('../../lib/error/lambda-error');
-var NonFatalError = require('../../lib/error/non-fatal-error');
+var LambdaError = process.env.KOPPER_SERVERLESS_COV ? require('../../lib-cov/error/lambda-error') : require('../../lib/error/lambda-error');
+var NonFatalError = process.env.KOPPER_SERVERLESS_COV ? require('../../lib-cov/error/non-fatal-error') : require('../../lib/error/non-fatal-error');
 
 exports.error = {
 	testLambdaError: function(test){

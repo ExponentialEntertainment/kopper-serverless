@@ -25,10 +25,13 @@
   "devDependencies": {
     "grunt": "*",
     "grunt-release": "*",
-    "grunt-contrib-nodeunit": "*"
+    "grunt-contrib-nodeunit": "*",
+		"jscoverage": "*",
+		"coveralls": "*"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "grunt nodeunit",
+		"coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 nodeunit --reporter=lcov test | coveralls"
   },
   "main": "main.js"
 }
