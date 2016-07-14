@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "grunt nodeunit",
-		"coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 nodeunit --reporter=lcov test | coveralls"
+		"coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 grunt nodeunit-lcov | coveralls"
   },
   "main": "main.js"
 }

@@ -7,9 +7,15 @@ module.exports = function (grunt) {
 		},
 		nodeunit: {
 			all: ['test/**']
+		},
+		'nodeunit-lcov': {
+			all: ['test/**'],
+			options: {
+				reporter: 'lcov'
+			}
 		}
 	});
-	
+
 	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 	grunt.loadNpmTasks('grunt-release');
 };
