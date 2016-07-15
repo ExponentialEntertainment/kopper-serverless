@@ -28,4 +28,6 @@ module.exports = function (grunt) {
 	
 	grunt.registerTask('test', ['nodeunit:all']);
 	grunt.registerTask('test-lcov', ['nodeunit:all-lcov']);
+	
+	grunt.registerTask('publish', ['test', 'release']);
 };
