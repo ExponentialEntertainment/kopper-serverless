@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 			}
 		},
 		nodeunit: {
-			all: ['test/**'],
+			all: ['test/**/*.js'],
 			'all-lcov': {
 				src: ['test/**/*.js'],
 				options: {
@@ -25,4 +25,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 	grunt.loadNpmTasks('grunt-coveralls');
 	grunt.loadNpmTasks('grunt-release');
+	
+	grunt.registerTask('test', ['nodeunit:all']);
+	grunt.registerTask('test-lcov', ['nodeunit:all-lcov']);
 };

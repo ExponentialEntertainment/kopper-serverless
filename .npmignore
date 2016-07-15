@@ -1,3 +1,5 @@
 nbproject/
 lib-cov/
 test/
+/.travis.yml
+/Gruntfile.js
