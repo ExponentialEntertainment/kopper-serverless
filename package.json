@@ -1,37 +1,40 @@
 {
-  "name": "kopper-serverless",
-  "description": "A small framework for building serverless apis on AWS lambda in node",
-  "version": "0.1.5",
-  "keywords": [
-    "aws",
-    "lambda",
-    "node",
-    "framework",
-    "serverless"
-  ],
-  "author": "Ben Connito",
-  "homepage": "https://github.com/benconnito/kopper-serverless",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/benconnito/kopper-serverless.git"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/benconnito/kopper-serverless/blob/master/LICENSE.md"
-    }
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-release": "*",
-    "grunt-contrib-nodeunit": "*",
-    "jscoverage": "*",
-    "grunt-coveralls": "*"
-  },
-  "scripts": {
-    "test": "grunt test",
-    "coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 grunt test-lcov && grunt coveralls:upload"
-  },
-  "main": "main.js"
+	"name": "kopper-serverless",
+	"description": "A small framework for building serverless apis on AWS lambda in node",
+	"version": "0.1.5",
+	"keywords": [
+		"aws",
+		"lambda",
+		"node",
+		"framework",
+		"serverless"
+	],
+	"author": "Ben Connito",
+	"homepage": "https://github.com/benconnito/kopper-serverless",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/benconnito/kopper-serverless.git"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/benconnito/kopper-serverless/blob/master/LICENSE.md"
+		}
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-release": "*",
+		"grunt-contrib-nodeunit": "*",
+		"jscoverage": "*",
+		"grunt-coveralls": "*"
+	},
+	"scripts": {
+		"test": "grunt test",
+		"coveralls": "jscoverage lib && KOPPER_SERVERLESS_COV=1 grunt test-lcov && grunt coveralls:upload"
+	},
+	"engines": {
+		"node": ">=4.0.0"
+	},
+	"main": "main.js"
 }
