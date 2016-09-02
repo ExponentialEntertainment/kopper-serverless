@@ -7,7 +7,7 @@ A small framework for building serverless apis on AWS lambda in node.
 [![devDependency Status](https://david-dm.org/benconnito/kopper-serverless/dev-status.svg)](https://david-dm.org/benconnito/kopper-serverless#info=devDependencies)
 
 ##there is a grunt helper!
-use with https://github.com/benconnito/grunt-kopper-serverless for easy deployment of lambdas and api definition on api gateway
+use with https://github.com/benconnito/grunt-kopper-serverless for easy deployment of aws lambda and api definition on aws api gateway
 
 ##api
 ```javascript
